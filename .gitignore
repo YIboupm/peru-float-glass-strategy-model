@@ -1,0 +1,13 @@
+# Local Python environment and caches
+work/python_deps/
+__pycache__/
+*.py[cod]
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# The ZIP repeats tracked source artifacts; retain it locally as a convenience package.
+outputs/秘鲁玻璃策略_研究与复算包.zip

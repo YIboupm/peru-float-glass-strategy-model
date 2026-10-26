@@ -1,0 +1,25 @@
+{
+  "warning": "Unquoted costs and behavioural parameters below are explicit analyst scenarios, not company guidance or fitted estimates. Constant 2024 USD. Import pools are not total national demand outside Peru.",
+  "years": [2027,2028,2029,2030,2031],
+  "design_capacity_t": 198090,
+  "capacity_factors": [0.85,0.95,1,1,1],
+  "discount_rate": 0.10,
+  "variable_factory_cost_usd_t": 240,
+  "growth": 0.03,
+  "beta": 25,
+  "switch_threshold": 0.08,
+  "price_discount_grid": [0,0.02,0.04,0.06,0.08,0.10,0.12,0.14,0.16,0.18,0.20,0.22,0.24,0.26,0.28,0.30,0.32,0.34,0.36,0.38,0.40],
+  "missing_clear_glass_thickness_mm": 5,
+  "markets": {
+    "PER": {"name": "秘鲁全国", "phi": 0.90, "smax": 0.80, "initial_share": 0.15, "freight": 25, "other_delivery": 15, "benchmark_inland": 25, "tariff": 0},
+    "ECU": {"name": "厄瓜多尔", "phi": 0.85, "smax": 0.55, "initial_share": 0, "freight": 100, "other_delivery": 25, "benchmark_inland": 30, "tariff": 0},
+    "BOL": {"name": "玻利维亚", "phi": 0.85, "smax": 0.55, "initial_share": 0, "freight": 130, "other_delivery": 25, "benchmark_inland": 30, "tariff": 0},
+    "CHL": {"name": "智利全国进口替代池", "phi": 0.80, "smax": 0.40, "initial_share": 0, "freight": 85, "other_delivery": 25, "benchmark_inland": 30, "tariff": 0},
+    "COL": {"name": "哥伦比亚已量化的着色与镀膜进口池", "phi": 0.80, "smax": 0.35, "initial_share": 0, "freight": 130, "other_delivery": 25, "benchmark_inland": 30, "tariff": 0}
+  },
+  "channels": {
+    "direct": {"name": "直营仓配", "variable_cost": 12, "annual_fixed": 500000, "entry_cost": 500000, "share_multiplier": 1, "lambda": 0.55},
+    "distributor": {"name": "经销", "variable_cost": 45, "annual_fixed": 40000, "entry_cost": 50000, "share_multiplier": 0.90, "lambda": 0.90},
+    "trade": {"name": "订单贸易", "variable_cost": 65, "annual_fixed": 10000, "entry_cost": 10000, "share_multiplier": 0.55, "lambda": 1.20}
+  }
+}
